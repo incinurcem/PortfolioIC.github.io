@@ -139,11 +139,49 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>For this example project I built a ball classifier to identify balls from different sports. This could be useful for someone who is new to sports from a certain country. They could take a picture of a ball and an app could serve them some information about the history and rules of the game. This is the underlying model for building something with those capabilities.</p>
-<p>I was able to get the model to predict the sport of the ball with 94% accuracy after minimal tuning. For most of the cases this would meet the need of an end user of the app. To get these results I used transfer learning on a CNN trained on resnet34. This created time efficiencies and solid results.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      <p>
+      <ul>
+      It is a project based on the analysis of photos taken from Google Images, divided into four different categories, with five different classifiers. As a result of the analysis, it was aimed to make an Accuracy Score comparison.
+
+        <b>What's been done</b>
+<li>Using the Selenium library, photos were found in the desired tag from Google Images and downloaded to the desired path.</li>
+<li>A dataset consisting of a total of 2000 photographs, 500 for each category, was obtained.</li>
+<li>The names of the downloaded photos have been changed sequentially according to the category for ease of editing.</li>
+<li>For the edited photos, exploratory data analysis was carried out at 150x150 image size.</li>
+<li>The data is separated manually according to 20% test rate and assigned to separate dataframes.</li>
+<li>For the analysis of the data, 5 different classifiers were used during the modeling phase. These ;</li>
+        <ul>
+<li>Linear Support Vector Classifier
+<li>K-Nearest Neighbors Classifier
+<li>Gaussian Naive Bayes Classifier
+<li>Random Forest Classifier
+<li>Decision Tree Classifier </ul>
+
+<b>Conclusion and Interpretation</b>
+
+As a result, Random Forest Classifier obtained the highest accuracy rate of 66.7% among the five different classifiers used. This result can be optimized by increasing the size of the dataset. Accuracy score is the rate at which our model provides accurate predictions. For this reason, according to the analysis and the dataset used, Random Forest Classifier predicts better than other classifiers which of the four different categories a photograph randomly given to our model belongs to.
+        
+      </ul>
+    
+      </p>
 <figure>
-    <img src="https://incinurcem.github.io/PortfolioIC.github.io/images/matrix_results.png"/> 
+    <img src="https://incinurcem.github.io/PortfolioIC.github.io/images/p2-1.png"/> 
 </figure>
+    <p>Graph showing the separation of photo data in four different categories as train and test.</p>
+<figure>
+    <img src="https://incinurcem.github.io/PortfolioIC.github.io/images/p2-2.png"/> 
+</figure>
+    <p>Display of a photo randomly taken from the dataset.</p>
+<figure>
+    <img src="https://incinurcem.github.io/PortfolioIC.github.io/images/p2-3.png"/> 
+</figure>
+    <p>Representation of a few photos taken randomly from the dataset with their labels.</p>
+<figure>
+    <img src="https://incinurcem.github.io/PortfolioIC.github.io/images/p2-4.png"/> 
+</figure>
+    <p>Comparing the accuracy scores obtained by five different classifiers as a result of the analysis.</p>
+
 
 <p><a href="https://github.com/PlayingNumbers/ds_salary_proj">This Project&rsquo;s GitHub Repository</a></p>
 <ul class="pa0">
